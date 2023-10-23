@@ -13,7 +13,7 @@ const smtpUser = process.env.SMTP_USER;
 const smtpPass = process.env.SMTP_PASS;
 const apiEndpoint = process.env.API_ENDPOINT;
 
-const uri = dbURI;
+const uri = process.env.MONGODB_URI;
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
